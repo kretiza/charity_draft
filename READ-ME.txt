@@ -1,0 +1,81 @@
+MICHAEL'S JOURNEY
+A warm, responsive fundraiser / Exhibit website design demo.
+
+GET STARTED ON WINDOWS
+1. Extract the whole ZIP file into a folder.
+2. Double-click START-WEBSITE.cmd.
+3. Your browser opens http://127.0.0.1:8797/.
+4. Keep the small website window open while you explore.
+5. Use the Admin link in the footer to add or edit stories.
+
+No installation, account, payment service, or login is needed.
+The launcher uses Windows PowerShell and serves only this folder on your computer.
+Close its window, or press Ctrl+C, to stop it.
+
+You can open index.html directly to view the design, but browser storage and
+linked SVG icons can behave differently for files opened without a local server.
+Use the launcher for the complete admin demonstration.
+
+On another operating system, serve this folder with any static HTTP server.
+If Node.js is installed: npx http-server . -p 8797
+If Python is installed: python -m http.server 8797
+Keep the same address and browser for consistent saved data.
+
+THE SEVEN PAGES
+index.html          Home: full supplied introduction, six cards, giving section
+how-it-works.html   Four steps, without a video
+faq.html            Collapsible questions and answers
+about.html          Biography, portrait and contact placeholders
+exhibit.html        Search, region filters, sorting, 12 cards per page
+family.html?id=...  Gallery, full story and direct-payment methods
+admin.html          Add, edit, delete, draft, publish, export and restore
+
+USING THE ADMIN
+Twenty-four fictional published stories are included for reviewing pagination.
+Create an Exhibit, add photos and videos, and choose a cover photo.
+Uploaded videos can be MP4, WebM or OGG; YouTube links are also supported.
+Supported photos: JPG, PNG, WebP and GIF; QR codes: JPG, PNG or WebP.
+Limits: 8 MB per image, 50 MB per video, 24 media items per Exhibit.
+Browser video support depends on the video format and codec.
+The payment panel supports a QR-code image, bank account and other payment option.
+There are no donation totals or progress bars.
+
+A title is enough to save a draft. A published story needs a display name,
+location, island group, brief introduction, story and cover photo.
+For a real (non-sample) story, confirm permission and add a complete payment method.
+Preview drafts from the admin without listing them in the Exhibit.
+
+HOW SAVING WORKS
+Changes and uploaded media are stored in IndexedDB in your current browser.
+Publishing updates this browser's demo, not the files on disk or an online site.
+Use the same browser, address and port each time.
+Clearing browser data, changing browsers or changing the website address can
+make saved work unavailable. Export a backup before changing any of these.
+The admin's Backup & restore tab exports all current stories and their uploads
+to one JSON file. Importing replaces the current local content after confirmation.
+Large uploads need enough browser storage. Backup media limit: 250 MB.
+
+REAL DONATIONS AND FUTURE PUBLISHING
+Sample stories and payment panels cannot accept donations.
+No payment processor is connected and no money is collected by this website.
+An online version will need shared storage and a protected admin account before
+admin content can be published for other visitors. That is outside this local demo.
+QR and bank details entered by the admin are displayed directly on the family page.
+
+IMAGES, FONTS AND CONTENT
+All photo placeholders were browsed and downloaded from Pexels.
+No AI-generated photography is used. See PHOTO-CREDITS.txt and Photo credits
+in the footer. Photos and fonts are included locally so the design works offline.
+YouTube playback and external payment links need an internet connection.
+Names, locations and family circumstances in seed stories are fictional examples.
+The people in photographs are unrelated to the sample stories.
+Michael's portrait, biography, logo and contact details are placeholders.
+
+EDITING THE DESIGN
+The pages are plain HTML with shared assets/styles.css and JavaScript files.
+No build step is required. Keep the folder structure intact.
+assets/data.js contains the 24 original sample stories and browser storage layer.
+Changing seed stories affects a fresh browser database; existing saved data is
+preserved. Admin backup and restore can move saved content to another browser.
+
+For photo and font sources, see PHOTO-CREDITS.txt and assets/fonts/*-LICENSE.txt.
